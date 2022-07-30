@@ -1,0 +1,84 @@
+body {
+    user-select: none;
+    background-image: url(../img/TheWall.jpg);
+}
+
+.container { /* calculator */
+    margin-left: 30%;
+    margin-top: 30px;
+    box-shadow: 0px 5px 10px 0px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    background-color: #2b2828;
+    border-radius: 15px;
+    max-width: 450px;
+    font-family: "Calibri";
+    padding: 15px;
+}
+
+.item { /* items */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    border:  #2b2828 1px solid;
+}
+
+.input { /* input number area */
+    min-height: 60px;
+    height: auto;
+    padding: 5px 20px;
+    grid-column: 1/-1;
+    font-size: 40px;
+    justify-content: flex-end;
+    border: #fff 1px solid;
+}
+
+.upper { /* bfs */
+    font-size: 20px;
+    margin-left: 3px;
+    margin-top: -20px;
+}
+
+.percent, .divide, .mul, .sub, .add { /* bfs */
+    color: #ff7c01;
+}
+
+.clean, .back { /* bfs */
+    color: red;
+}
+
+.stap, .dut { /* bfs */
+    color: blue;
+}
+
+.bf { /* bfs */
+    color: #ff7c01;
+}
+
+.equal { /* equal */
+    background-color: #ff7c01;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border:  #2b2828 1px solid;
+}
+
+/* ------------------------ */
+
+.container:hover {
+    box-shadow: 10px 10px 15px rgba(109, 12, 165, 0.25);
+}
+
+.item:hover {
+    border: aliceblue 1px solid;
+    background-color: #3d3838;
+}
+
+.item:active {
+    background-color: #5f5d5e;
+    color: rgb(105, 36, 96);
+}

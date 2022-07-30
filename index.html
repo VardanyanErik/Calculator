@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CalculatorEr</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/CalculatorIcon.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <div class="item input">0</div> <!-- input number -->
+
+        <div class="item clean" onclick="clean()">C</div> <!-- clear -->
+        <div class="item back" onclick="back()">&lArr;</div> <!-- come back -->
+        <div class="item stap" onclick="insert('(')">(</div> <!-- staple ( -->
+        <div class="item stap" onclick="insert(')')">)</div> <!-- staple ) -->
+
+        <div class="item add" onclick="insert('+')">+</div> <!-- plus + -->
+        <div class="item sub" onclick="insert('-')">-</div> <!-- minus - -->
+        <div class="item mul" onclick="insert('*')">&times;</div> <!-- multiply * -->
+        <div class="item divide" onclick="insert('/')">&divide;</div> <!-- divide / -->
+
+        <div class="item" onclick="insert('7')">7</div> <!-- number 7 -->
+        <div class="item" onclick="insert('8')">8</div> <!-- number 8 -->
+        <div class="item" onclick="insert('9')">9</div> <!-- number 9  -->
+
+        <div class="item bf" onclick="operation('sqr')">x<span class="upper">2</span></div> <!-- degree -->
+        <div class="item" onclick="insert('4')">4</div> <!-- number 4 -->
+        <div class="item" onclick="insert('5')">5</div> <!-- number 5 -->
+        <div class="item" onclick="insert('6')">6</div> <!-- number 6 -->
+ 
+        <div class="item bf" onclick="operation('sqrt')">&radic;x</div> <!-- square root -->
+        <div class="item" onclick="insert('1')">1</div> <!-- number 1 -->
+        <div class="item" onclick="insert('2')">2</div> <!-- number 2 -->
+        <div class="item" onclick="insert('3')">3</div> <!-- number 3-->
+
+        <div class="item bf" onclick="operation('^')">x<span class="upper">y</span></div> <!-- calculate x to the power of y -->
+        <div class="item dut" onclick="insert('.')">,</div> <!-- -->
+        <div class="item" onclick="insert('0')">0</div> <!-- number 0 -->
+        <div class="item equal" onclick="equal()">=</div> <!-- equal -->
+     </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
